@@ -79,6 +79,8 @@ Workspace settings are stored in a file named settings.json.
 
 By default this file is located in the application data directory, but a settings file in the same directory as the Mu application itself will take priority.
 
+If you are using Mu on a Windows network and would it to default to saving it's files to your users homedrive network shares then you can create a settings.json file like the one below. Obviously change your drive letters to match your environment!
+
 By default, Mu uses a bundled version of the MicroPython runtime, but advanced users (e.g. those developing the Microbit runtime) can use the settings.json file to configure Mu to use their own runtime hex file.
 
 To do this, add a line like this to the settings.json file:
