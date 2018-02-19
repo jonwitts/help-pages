@@ -74,13 +74,14 @@ Show help - should be this help.
 Press this when you are done with Mu. Mu will make sure you've saved your work if you want to keep it.
 
 # Advanced - settings file
+The default behaviour of Mu is controlled through a settings.json file. By default this file is located in the application data directory, but a settings file in the same directory as the Mu application itself will take priority.
 
-Workspace settings are stored in a file named settings.json.
+## Workspace settings
+If you are using Mu on a Windows network and would like it to default to saving it's files to your users homedrive network shares then you can create a settings.json file like the one below. Obviously change your drive letters to match your environment!
 
-By default this file is located in the application data directory, but a settings file in the same directory as the Mu application itself will take priority.
+![Workspace settings](images/workspace.png)
 
-If you are using Mu on a Windows network and would it to default to saving it's files to your users homedrive network shares then you can create a settings.json file like the one below. Obviously change your drive letters to match your environment!
-
+## Runtime settings
 By default, Mu uses a bundled version of the MicroPython runtime, but advanced users (e.g. those developing the Microbit runtime) can use the settings.json file to configure Mu to use their own runtime hex file.
 
 To do this, add a line like this to the settings.json file:
